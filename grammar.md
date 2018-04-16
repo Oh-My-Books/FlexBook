@@ -31,6 +31,7 @@
     <style>
         .flex-container {
             display: flex;
+            flex-direction: row;  /* 默认 */
         }
         .item{
             display: inherit;
