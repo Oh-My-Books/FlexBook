@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>flex-direction:</title>
+    <title>flex-direction</title>
     <style>
+        #wrap {
+            width: 400px;
+        }
         .flex-container {
             display: flex;
-            flex-direction: row;  /* 默认 */
+            flex-wrap: nowrap; /* 默认，可以不写 */
         }
         .item{
             display: inherit;
@@ -23,7 +26,7 @@
 </head>
 <body>
 
-<div class="flex-container" id="direction">
+<div class="flex-container" id="wrap">
     <div class="item" style="background-color: #2a80b9;"><p>1</p></div>
     <div class="item" style="background-color: #8f44ad;"><p>2</p></div>
     <div class="item" style="background-color: #16a086;"><p>3</p></div>
